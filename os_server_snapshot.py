@@ -50,7 +50,7 @@ EXAMPLES = '''
         password: admin
         project_name: admin
     server: test
-    snapshotname: test-snapshpt-1
+    snapshotname: test-snapshot-1
     timeout: 200
 '''
 def _wait(timeout, cloud, server):

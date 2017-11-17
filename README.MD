@@ -1,9 +1,9 @@
 ---
-```
- version_added: "1.0"
- description:
+Description:
     -Take a snapshot of the server instance
- option:
+---
+Option:
+```
     snapshotname:
         description:
             - Name of the snipshot to the instance
@@ -20,13 +20,15 @@
             - If the module should wait for the instance action to be performed.
         required: false
         default: 'yes'
-
-
- requriments:
+```
+---
+requriments:
+```
     - "python >= 2.6"
     - "shade"
 ```
 ---
+EXAMPLE:
 ```
 # take a snipshot of the instance
 - os_server_snapshot:
@@ -36,6 +38,6 @@
         password: admin
         project_name: admin
     server: test
-    snapshotname: test-snapshpt-1
+    snapshotname: test-snapshot-1
     timeout: 200
 ```
