@@ -1,10 +1,9 @@
-module: os_server_snapshot
-short_description: Take a snapshot of the server instance
-version_added: "1.0"
-author: "zwuding"
-description:
+---
+```
+ version_added: "1.0"
+ description:
     -Take a snapshot of the server instance
-option:
+ option:
     snapshotname:
         description:
             - Name of the snipshot to the instance
@@ -23,10 +22,12 @@ option:
         default: 'yes'
 
 
-requriments:
+ requriments:
     - "python >= 2.6"
     - "shade"
+```
 ---
+```
 # take a snipshot of the instance
 - os_server_snapshot:
     auth:
@@ -37,3 +38,4 @@ requriments:
     server: test
     snapshotname: test-snapshpt-1
     timeout: 200
+```
