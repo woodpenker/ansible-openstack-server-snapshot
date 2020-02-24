@@ -93,7 +93,7 @@ def main():
             module.fail_json(msg='Could not find server %s' % server)
         status = server.status
         if status != 'ACTIVE':
-            module.fail_json(msg='Server is not runinn %s' % server)
+            module.fail_json(msg='Server is not running %s' % server)
         result=cloud.create_image_snapshot(snapshotname,server,wait,timeout)
         if wait:
             _wait(timeout, cloud, server)
